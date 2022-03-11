@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Drag and Drop Puzzle Game</title>
+	<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<header id="headLine">
+		<h2>Drag & Drop To Complete The Picture Puzzle</h2>
+	</header>
+	<section id="game-boards">
+		<!-- these are draggable pieces -->
+		<div class="puzzle-pieces">
+			<img id="topLeft" src="images/topLeft0.jpg" alt="top left" class="puzzle-image">
+			<img id="topRight" src="images/topRight0.jpg" alt="top right" class="puzzle-image">
+			<img id="bottomLeft" src="images/bottomLeft0.jpg" alt="bottom left" class="puzzle-image">
+			<img id="bottomRight" src="images/bottomRight0.jpg" alt="bottom right" class="puzzle-image">
+		</div>
+		<!-- this is the drop zone  container-->
+		<div class="puzzle-board">
+			<!-- these are the drop zones -->
+			<div class="drop-zone" data-drop="topLeft"></div>
+			<div class="drop-zone" data-drop="topRight"></div>
+			<div class="drop-zone" data-drop="bottomLeft"></div>
+			<div class="drop-zone" data-drop="bottomRight"></div>
+		</div>
+	</section>
+
+	<footer>
+		<!-- <h2 class="hidden">Switch the Puzzle</h2> -->
+		<p>click thumb to change pieces!</p>
+		<nav id="buttonHolder">
+			<h3 class="hidden">Select Image</h3>
+			<img data-imageref="0" src="images/buttonZero.jpg" alt="thumbnail">
+			<img data-imageref="1" src="images/buttonOne.jpg" alt="thumbnail">
+	   		<img data-imageref="2" src="images/buttonTwo.jpg" alt="thumbnail">
+			<img data-imageref="3" src="images/buttonThree.jpg" alt="thumbnail">
+		</nav>
+	</footer>
+
+	<script src="js/app.js"></script>
+</body>
+</html>
